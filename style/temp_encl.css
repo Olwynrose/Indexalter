@@ -1,0 +1,369 @@
+* {
+  font-family: Lato Light;
+}
+
+/* PARTIE FIXE */
+
+/* HEADER */
+.container {
+  display: flex;
+}
+body {
+  flex-direction: column;
+  width: 100%;
+}
+header {
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  /*----------------------*/
+  width: 100%;
+  height: 200px;
+  /*----------------------*/
+  background-color: rgb(132, 198, 99);
+}
+header img {
+  width: 400px;
+  height: auto;
+}
+
+/* NAV */
+nav#main {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /*----------------------*/
+  width: 100%;
+  height: 60px;
+  /*----------------------*/
+  background-color: rgb(50,150,0);
+}
+nav#main a {
+  padding: 21px 30px;
+  /*----------------------*/
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav#main a:hover {
+  color: black;
+  background-color: white;
+  transition: color 0.35s,
+              background-color 0.35s;
+}
+nav#main a#selected {
+  color: black;
+  background-color: white;
+}
+
+
+
+nav#infost {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*----------------------*/
+  width: 100%;
+  height: 80px;
+  /*----------------------*/
+  margin-top: 40px;
+}
+nav#infost a {
+  margin: 1px 0;
+/*----------------------*/
+  text-decoration: none;
+  font-style: italic;
+  color: black;
+  font-size: 14px;
+}
+nav#infost a:hover {
+  text-decoration: underline;
+}
+nav#infost div {
+  flex-direction: row;
+  /*----------------------*/
+  width: 70%;
+  /*----------------------*/
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  align-content: space-around;
+}
+nav#infost a#selected {
+  padding: 5px;
+  background-color: #CDCDCD;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #CDCDCD;
+}
+hr {
+  width: 70%;
+}
+
+
+
+/* ASIDE */
+#fbox1 {
+  flex-direction: row;
+}
+aside {
+  flex-direction: column;
+  /*----------------------*/
+  height:inherit;
+  width: 250px;
+  /*----------------------*/
+  background-color: rgb(117, 183, 84);
+}
+aside div {
+  flex-direction: column;
+}
+aside h5 {
+  width: 100%;
+  /*----------------------*/
+  padding: 7px 0;
+  margin: 0 0 5px 0;
+  /*----------------------*/
+  font-size: 17px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 0 0 40px 0;
+}
+aside h5 a {
+  text-decoration: none;
+  color: black;
+}
+aside div a {
+  width: 100%;
+  padding: 5px 15px;
+  padding-right: 0;
+  /*----------------------*/
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+aside div a:hover {
+  background-color: rgb(50,150,0);
+  width: 100%;
+  box-shadow: 0px 5px 10px #000;
+  padding-left: 30px;
+  font-weight: bold;
+  transition: width 0.3s,
+              box-shadow 0.5s,
+              font-weight 0.3s,
+              padding-left 0.3s,
+              background-color 0.3s;
+}
+aside h5 a:hover {
+  padding-left: 30px;
+  transition: padding-left 0.3s;
+}
+
+
+/* SECTION */
+section {
+  width: 100%;
+  flex-direction: column;
+  /*----------------------*/
+  background-color: white;
+  /*----------------------*/
+  margin-bottom: 80px;
+}
+section h2 {
+  font-family: Lobster Two;
+  font-size: 40px;
+  text-shadow: 3px -4px 1px rgba(0,0,0,0.25);
+  text-align: center;
+}
+article {
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.st1 {
+  margin: 50px 0 25px 0;
+  font-size: 27px;
+  color: white;
+  background-color: rgb(50,150,0);
+  padding: 8px;
+}
+.st2 {
+  margin: 35px 0 10px 0;
+  font-size: 22px;
+}
+.st3 {
+  margin: 8px 0 4px 0;
+  color:  rgb(50,150,0);
+  font-size: 18px;
+}
+section h3 ~ div {
+  padding-left: 30px;
+}
+section h4 {
+  padding-left: 30px;
+}
+section h4 ~ div {
+  padding-left: 55px;
+}
+section h5 {
+  padding-left: 30px;
+}
+section h5 ~ div {
+  padding-left: 55px;
+}
+
+
+/* CONTAINER DE MOTS CLES */
+p.kw {
+  width: 60%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: space-around;
+/*----------------------*/
+  padding: 0 20px 2px 20px;
+  margin: 5px;
+  margin-left: 20px;
+/*----------------------*/
+  border: solid 1px;
+  border-color: #DCDCDC;
+  border-radius: 7px;
+}
+h3 + p.kw {
+  margin: 20px;
+  margin-top: 0;
+}
+p.kw a {
+  padding: 0 5px 0 5px;
+  margin: 0;
+/*----------------------*/
+  font-size: 14px;
+  color: DarkGray;
+  text-decoration: none;
+}
+p.kw a:hover {
+  background-color: #efefef;
+  border-radius: 5px;
+  transition: background-color 0.25s;
+}
+
+
+
+li.info {
+  margin-bottom: 15px;
+}
+
+
+
+/* DESCRIPTION DES LIVRES */
+input.ensavoirplus {
+  width: 100px;
+  margin-left: 15px;
+  /*----------------------*/
+  font-size: 12px;
+  color: gray;
+  border-radius: 5px;
+}
+input.ensavoirplus:hover {
+  background-color: #CDCDCD;
+  transition: background-color 0.2s;
+}
+p.ensavoirplus {
+  font-size: 13px;
+  font-style: italic;
+  /*----------------------*/
+  margin-left: 50px;
+}
+
+
+
+dt {
+  font-weight: bold;
+}
+
+
+
+
+/* INSERTION DE MEDIAS */
+div.video {
+  width: 100%;
+/*----------------------*/
+  flex-direction: column;
+  align-items: center;
+/*----------------------*/
+  margin: 50px 0;
+}
+
+div.photo {
+  width: 90%;
+  margin: 60px auto;
+  padding: 20px;
+/*----------------------*/
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+/*----------------------*/
+  border: solid 1px;
+  border-radius: 5px;
+  border-color: #CDCDCD;
+  background-color: #f3fee5;
+}
+div.photo img {
+  height: 215px;
+  margin: 10px 10px;
+}
+
+
+
+
+/* PROBLEMATIQUES */
+div.column5 {
+  -webkit-columns: 5;
+	-moz-columns: 5;
+	columns: 5;
+  margin: 50px auto;
+}
+li.lettre {
+  list-style: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+  nav#main {
+    justify-content: space-around;
+    flex-direction: column;
+    /*----------------------*/
+    height: auto;
+  }
+  nav#main a {
+    text-align: center;
+    margin: 4px 5px;
+    width: 100%;
+  }
+  #fbox1 {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+  }
+  nav#infost {
+    display: none;
+  }
+  p.kw, p.kw a{
+    font-size: 11px;
+  }
+
+}
