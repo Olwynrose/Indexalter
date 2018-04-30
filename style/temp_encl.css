@@ -69,16 +69,19 @@ nav#infost {
   /*----------------------*/
   margin-top: 40px;
 }
-nav#infost a {
+nav#infost div a {
   margin: 1px 0;
+  padding: 5px;
 /*----------------------*/
   text-decoration: none;
   font-style: italic;
   color: black;
   font-size: 14px;
+  border-radius: 5px;
 }
 nav#infost a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 nav#infost div {
   flex-direction: row;
@@ -90,10 +93,8 @@ nav#infost div {
   align-items: baseline;
   align-content: space-around;
 }
-nav#infost a#selected {
-  padding: 5px;
+nav#infost div a#selected {
   background-color: #CDCDCD;
-  border-radius: 5px;
   box-shadow: 0px 0px 5px #CDCDCD;
 }
 hr {
@@ -117,7 +118,7 @@ aside {
 aside div {
   flex-direction: column;
 }
-aside h5 {
+h5.cat_aside {
   width: 100%;
   /*----------------------*/
   padding: 7px 0;
@@ -128,11 +129,16 @@ aside h5 {
   background-color: white;
   border-radius: 0 0 40px 0;
 }
-aside h5 a {
+h5.cat_aside a {
   text-decoration: none;
   color: black;
 }
-aside div a {
+h5.cat_aside a:hover {
+  padding-left: 30px;
+  transition: padding-left 0.3s;
+  cursor: pointer;
+}
+a.elmt_aside {
   width: 100%;
   padding: 5px 15px;
   padding-right: 0;
@@ -141,22 +147,20 @@ aside div a {
   color: white;
   font-size: 14px;
 }
-aside div a:hover {
+a.elmt_aside:hover {
   background-color: rgb(50,150,0);
   width: 100%;
   box-shadow: 0px 5px 10px #000;
   padding-left: 30px;
   font-weight: bold;
+  cursor: pointer;
   transition: width 0.3s,
               box-shadow 0.5s,
               font-weight 0.3s,
               padding-left 0.3s,
               background-color 0.3s;
 }
-aside h5 a:hover {
-  padding-left: 30px;
-  transition: padding-left 0.3s;
-}
+
 
 
 /* SECTION */
