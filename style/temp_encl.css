@@ -198,20 +198,36 @@ article {
   color:  rgb(50,150,0);
   font-size: 18px;
 }
-section h3 ~ div {
+section article h3 ~ div {
   padding-left: 30px;
 }
-section h4 {
+section article h4 {
   padding-left: 30px;
 }
 section h4 ~ div {
   padding-left: 55px;
 }
-section h5 {
+section article h5 {
   padding-left: 30px;
 }
 section h5 ~ div {
   padding-left: 55px;
+}
+/* particulier pour la page problématiques */
+div.dh3 {
+  padding-left: 30px;
+}
+section article h4 {
+  padding-left: 60px;
+}
+div.dh4 {
+  padding-left: 85px;
+}
+section article h5 {
+  padding-left: 115px;
+}
+div.dh5 {
+  padding-left: 140px;
 }
 
 
@@ -249,6 +265,24 @@ p.kw a:hover {
   border-radius: 5px;
   transition: background-color 0.25s;
 }
+li.kw {
+  list-style: none;
+/*----------------------*/
+  padding: 0 20px 2px 20px;
+  margin: 2px 0px;
+/*----------------------*/
+  border: solid 1px;
+  border-color: #DCDCDC;
+  border-radius: 7px;
+  color: #777777;
+}
+li.kw:hover {
+  background-color: #efefef;
+  border-radius: 5px;
+  transition: background-color 0.25s;
+  cursor: pointer;
+}
+
 
 
 

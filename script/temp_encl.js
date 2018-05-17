@@ -30,13 +30,14 @@ $("#infost div .b_pb_t").attr('id', "selected");
 $("#nav_pbl").hide();
 $("#nav_pbt").show();
 
-$("#article_pb").show();
+$(".elmt").show();
 $("#liste_mc").hide();
 $("#liste_pb").hide();
 
 
+
 $(".b_pb_mc").click(function Affiche_problématiques_par_motclé() {
-  $("#article_pb").hide();
+  $(".elmt").hide();
   $("#liste_mc").show();
   $("#liste_pb").hide();
 
@@ -50,7 +51,7 @@ $(".b_pb_mc").click(function Affiche_problématiques_par_motclé() {
 
 
 $(".b_pb_l").click(function Affiche_liste_problématiques() {
-  $("#article_pb").hide();
+  $(".elmt").hide();
   $("#liste_mc").hide();
   $("#liste_pb").show();
 
@@ -64,7 +65,7 @@ $(".b_pb_l").click(function Affiche_liste_problématiques() {
 
 
 $(".b_pb_t").click(function Affiche_problématiques_par_thème() {
-  $("#article_pb").show();
+  $(".elmt").show();
   $("#liste_mc").hide();
   $("#liste_pb").hide();
 
@@ -77,10 +78,16 @@ $(".b_pb_t").click(function Affiche_problématiques_par_thème() {
 });
 
 
+$("li.kw").click(function() {
+  $(".elmt").hide();
 
+  var keyword;
+  var selector;
 
-
-
-
+  keyword = $(this).attr('class').split(" ").pop();
+  alert(keyword);
+  selector = "." + keyword + " .elmt";
+  $(selector).show();
+});
 
 });
