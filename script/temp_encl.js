@@ -85,7 +85,6 @@ $("li.kw").click(function() {
   var selector;
 
   keyword = $(this).attr('class').split(" ").pop();
-  alert(keyword);
   selector = "." + keyword + " .elmt";
   $(selector).show();
 });
